@@ -3,7 +3,8 @@ from django.views.generic import ListView
 from .models import Courses
 from .tables import CoursesTable
 
-class CoursesListView(ListView):
+
+class CoursesListview(ListView):
     model = Courses
     table_class = CoursesTable
-    template_name = 'poll/courses.html'
+    table_name = 'project/courses.hml'
